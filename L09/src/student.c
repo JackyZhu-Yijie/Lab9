@@ -1,8 +1,19 @@
+/**
+ * @file student.c
+ * @brief Contains the implementation of the functions for managing students defined in student.h
+ * @author Yijie Zhu
+ * @date 2023-03-31
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "student.h"
-
+/**
+ * \brief Adds a grade to a student's record
+ * 
+ * @param student Pointer to the student record to update
+ * @param grade The grade to add
+ */
 void add_grade(Student* student, double grade)
 {
   student->num_grades++;
@@ -14,7 +25,12 @@ void add_grade(Student* student, double grade)
   }
   student->grades[student->num_grades - 1] = grade;
 }
-
+/**
+ * \brief Calculates the average grade for a student
+ * 
+ * @param student Pointer to the student record to calculate the average for
+ * @return The average grade for the student
+ */
 double average(Student* student)
 {
   if (student->num_grades == 0) return 0;
@@ -23,7 +39,11 @@ double average(Student* student)
   for (int i = 0; i < student->num_grades; i++) total += student->grades[i];
   return total / ((double) student->num_grades);
 }
-
+/**
+ * \brief Prints out the information for a student, including their name, ID, grades, and average
+ * 
+ * @param student Pointer to the student record to print
+ */
 void print_student(Student* student)
 {
   printf("Name: %s %s\n", student->first_name, student->last_name);
@@ -34,7 +54,15 @@ void print_student(Student* student)
   printf("\n");
   printf("Average: %.2f\n\n", average(student));
 }
-
+/**
+ * \brief Generates a new random student record
+ * 
+ * @param grades The number of grades to generate for the student
+ * @return A pointer to the newly generated student record
+ * @note The caller is responsible for freeing the memory allocated for the student record
+ * @attention This function uses a fixed list of first and last names to generate the student's name
+ * @warning The student ID generated is a random 10-digit string of digits
+ */
 Student* generate_random_student(int grades)
 {
   char first_names[][24] = 
