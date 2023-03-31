@@ -1,26 +1,37 @@
-Project Name: Student Grades Management
-Date and Author
-Date: March 31, 2023
-Author: Yijie Zhu
+# Project Name: 
 
-Description
-This software package allows users to manage and analyze student grades. It provides functions to add grades to a student, calculate their average grade, and print student information.
+Doxygen
 
-Installation Instructions
-To use this software package, download the source code and compile it using a C compiler such as gcc. The code can be compiled using the command gcc main.c student.c -o grades.
+## Author: 
 
-Configuration Instructions
-No configuration is required for this software package.
+Yijie Zhu
 
-Operating Instructions
-To use this software package, run the compiled executable using the command ./grades. Users can then enter student information and add grades to the student. The average grade and student information can be printed using the appropriate functions.
+## Date: 
 
-Troubleshooting
-If the program crashes, ensure that the correct input is being provided when prompted. If there are errors during compilation, check that all necessary files are included and that the syntax is correct.
+2023-03-31
 
-Changelog
-Version 1.0
-Initial release
-Includes functions to add grades to a student, calculate their average grade, and print student information.
+## Description: 
 
+The purpose of this software package is to provide a comprehensive README file for software projects. This README includes important information about how the software is to be installed and run, as well as anything else of interest to the user. 
 
+## Installation Instructions: 
+
+To install this software package, simply download the README file and place it in the top-level directory of your software project.
+
+## Configuration Instructions: 
+
+To configure this software package, set the USE_MDFILE_AS_MAINPAGE variable in your Doxyfile to “README.md”, and add the line INPUT += README.md. This will allow Doxygen to use your README file as its main page.
+
+## Operating Instructions: 
+
+To use this software package, simply open the README file and read the instructions carefully. Be sure to follow all instructions closely to ensure proper installation and configuration of your software project.
+
+## Troubleshooting: 
+
+If you experience any issues while using this software package, please refer to the troubleshooting section in the README file. This section contains helpful information for resolving common issues and errors.
+
+## Changelog:
+
+### Version 1.0 (March 31, 2023)
+
+- Initial release of Software Package README.
