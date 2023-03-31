@@ -1,4 +1,3 @@
-# Variables
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c99
 SRCDIR = src
@@ -16,7 +15,7 @@ OBJS = $(patsubst $(SRCDIR)/%.c,$(BUILDDIR)/%.o,$(SRCS))
 
 all: $(BUILDDIR)/main
 
-$(BUILDDIR)/main: $(OBJS)
+$(BUILDDIR)/main: $(OBJS) | $(DOCDIR)/$(DOCSUBDIR)
 	$(CC) $(CFLAGS) $^ -o $@
 
 $(BUILDDIR)/%.o: $(SRCDIR)/%.c | $(BUILDDIR)
@@ -28,21 +27,19 @@ $(BUILDDIR):
 clean:
 	rm -rf $(BUILDDIR)
 
-docs: $(DOCDIR)/Doxyfile | $(DOCDIR)
-	doxygen $<
-
-$(DOCDIR)/Doxyfile: | $(DOCDIR)
+Doxyfile:
 	doxygen -g $@
 
-$(DOCDIR):
-	mkdir -p $@
+docs: Doxyfile | $(DOCDIR)/$(DOCSUBDIR)
+	doxygen $<
 
 $(DOCDIR)/$(DOCSUBDIR): | $(DOCDIR)
 	mkdir -p $@
 
+$(DOCDIR):
+	mkdir -p $@
+
 $(BUILDDIR)/main: | $(DOCDIR)/$(DOCSUBDIR)
 
-# Variables for testing purposes
-test:
-	echo $(SRCS)
-	echo $(OBJS)
+$(SCRIPTSDIR):
+	mkdir -p $@

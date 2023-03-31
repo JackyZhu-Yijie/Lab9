@@ -23,7 +23,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CS1XC3 Lab 9
    </div>
-   <div id="projectbrief">DOXYGEN TEST</div>
+   <div id="projectbrief">doxygen test</div>
   </td>
  </tr>
  </tbody>
@@ -70,24 +70,33 @@ $(function() {
 <div class="title">course.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;student.h&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="struct__course.html">    4</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__course.html">_course</a> </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  <span class="keywordtype">char</span> name[100];</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  <span class="keywordtype">char</span> code[10];</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <a class="code" href="struct__student.html">Student</a> *students;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keywordtype">int</span> total_students;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;} <a class="code" href="struct__course.html">Course</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> enroll_student(<a class="code" href="struct__course.html">Course</a> *course, <a class="code" href="struct__student.html">Student</a> *student);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">void</span> print_course(<a class="code" href="struct__course.html">Course</a> *course);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<a class="code" href="struct__student.html">Student</a> *top_student(<a class="code" href="struct__course.html">Course</a>* course);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<a class="code" href="struct__student.html">Student</a> *passing(<a class="code" href="struct__course.html">Course</a>* course, <span class="keywordtype">int</span> *total_passing);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="ttc" id="astruct__course_html"><div class="ttname"><a href="struct__course.html">_course</a></div><div class="ttdef"><b>Definition:</b> course.h:5</div></div>
-<div class="ttc" id="astruct__student_html"><div class="ttname"><a href="struct__student.html">_student</a></div><div class="ttdef"><b>Definition:</b> student.h:3</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="student_8h.html">student.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct__course.html">   14</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct__course.html">_course</a> </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct__course.html#a8a6f7d2171f18b5d13e86913345f381d">   16</a></span>&#160;  <span class="keywordtype">char</span> <a class="code" href="struct__course.html#a8a6f7d2171f18b5d13e86913345f381d">name</a>[100]; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct__course.html#ae86dc46bc4dfe126555e5560860b583f">   17</a></span>&#160;  <span class="keywordtype">char</span> <a class="code" href="struct__course.html#ae86dc46bc4dfe126555e5560860b583f">code</a>[10]; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct__course.html#a5cf448bc80f0f8c5f23402db23d41a00">   18</a></span>&#160;  <a class="code" href="struct__student.html">Student</a> *<a class="code" href="struct__course.html#a5cf448bc80f0f8c5f23402db23d41a00">students</a>; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct__course.html#afd5e161f7cf358c13cc8aa868b462006">   19</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct__course.html#afd5e161f7cf358c13cc8aa868b462006">total_students</a>; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <a class="code" href="struct__course.html">Course</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="course_8c.html#af3abbc650ef56ffff427a62dad63fc77">enroll_student</a>(<a class="code" href="struct__course.html">Course</a> *course, <a class="code" href="struct__student.html">Student</a> *student);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="course_8c.html#a99bf8b3f3c2d5dc7cf798ed445eaaa77">print_course</a>(<a class="code" href="struct__course.html">Course</a> *course);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<a class="code" href="struct__student.html">Student</a> *<a class="code" href="course_8c.html#ae0130f7ef7b879c9a790ee27a5ce21b7">top_student</a>(<a class="code" href="struct__course.html">Course</a>* course);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<a class="code" href="struct__student.html">Student</a> *<a class="code" href="course_8c.html#a3f939f002e675839379b8d2dff044162">passing</a>(<a class="code" href="struct__course.html">Course</a>* course, <span class="keywordtype">int</span> *total_passing);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="ttc" id="acourse_8c_html_a3f939f002e675839379b8d2dff044162"><div class="ttname"><a href="course_8c.html#a3f939f002e675839379b8d2dff044162">passing</a></div><div class="ttdeci">Student * passing(Course *course, int *total_passing)</div><div class="ttdoc">Calculates the number of passing students in a course.</div><div class="ttdef"><b>Definition:</b> course.c:96</div></div>
+<div class="ttc" id="acourse_8c_html_a99bf8b3f3c2d5dc7cf798ed445eaaa77"><div class="ttname"><a href="course_8c.html#a99bf8b3f3c2d5dc7cf798ed445eaaa77">print_course</a></div><div class="ttdeci">void print_course(Course *course)</div><div class="ttdoc">Prints information about a course and its students.</div><div class="ttdef"><b>Definition:</b> course.c:41</div></div>
+<div class="ttc" id="acourse_8c_html_ae0130f7ef7b879c9a790ee27a5ce21b7"><div class="ttname"><a href="course_8c.html#ae0130f7ef7b879c9a790ee27a5ce21b7">top_student</a></div><div class="ttdeci">Student * top_student(Course *course)</div><div class="ttdoc">Finds the student with the highest average grade in the course.</div><div class="ttdef"><b>Definition:</b> course.c:61</div></div>
+<div class="ttc" id="acourse_8c_html_af3abbc650ef56ffff427a62dad63fc77"><div class="ttname"><a href="course_8c.html#af3abbc650ef56ffff427a62dad63fc77">enroll_student</a></div><div class="ttdeci">void enroll_student(Course *course, Student *student)</div><div class="ttdoc">Enrolls a student in a course.</div><div class="ttdef"><b>Definition:</b> course.c:19</div></div>
+<div class="ttc" id="astruct__course_html"><div class="ttname"><a href="struct__course.html">_course</a></div><div class="ttdoc">A structure representing a course.</div><div class="ttdef"><b>Definition:</b> course.h:15</div></div>
+<div class="ttc" id="astruct__course_html_a5cf448bc80f0f8c5f23402db23d41a00"><div class="ttname"><a href="struct__course.html#a5cf448bc80f0f8c5f23402db23d41a00">_course::students</a></div><div class="ttdeci">Student * students</div><div class="ttdef"><b>Definition:</b> course.h:18</div></div>
+<div class="ttc" id="astruct__course_html_a8a6f7d2171f18b5d13e86913345f381d"><div class="ttname"><a href="struct__course.html#a8a6f7d2171f18b5d13e86913345f381d">_course::name</a></div><div class="ttdeci">char name[100]</div><div class="ttdef"><b>Definition:</b> course.h:16</div></div>
+<div class="ttc" id="astruct__course_html_ae86dc46bc4dfe126555e5560860b583f"><div class="ttname"><a href="struct__course.html#ae86dc46bc4dfe126555e5560860b583f">_course::code</a></div><div class="ttdeci">char code[10]</div><div class="ttdef"><b>Definition:</b> course.h:17</div></div>
+<div class="ttc" id="astruct__course_html_afd5e161f7cf358c13cc8aa868b462006"><div class="ttname"><a href="struct__course.html#afd5e161f7cf358c13cc8aa868b462006">_course::total_students</a></div><div class="ttdeci">int total_students</div><div class="ttdef"><b>Definition:</b> course.h:19</div></div>
+<div class="ttc" id="astruct__student_html"><div class="ttname"><a href="struct__student.html">_student</a></div><div class="ttdef"><b>Definition:</b> student.h:13</div></div>
+<div class="ttc" id="astudent_8h_html"><div class="ttname"><a href="student_8h.html">student.h</a></div><div class="ttdoc">Header file for Course struct and related functions. Defines the Course and Student structs and funct...</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
