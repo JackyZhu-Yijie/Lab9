@@ -1,0 +1,20 @@
+name: docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2 
+    - name: Install Doxygen 
+      run: sudo apt-get install doxygen -y 
+    - name: Build docs 
+      run: |
+        cd L09
+        make docs 
